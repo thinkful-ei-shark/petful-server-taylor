@@ -17,11 +17,11 @@ store.dogs.forEach(dog => pets.dogs.enqueue(dog));
 module.exports = {
   get() {
     // Return the pets next in line to be adopted.
-    let pets = {
-      cat: pets.cat.show(),
+    let newPets = {
+      cat: pets.cats.show(),
       dog: pets.dogs.show(),
     };
-    return pets;
+    return newPets;
   },
 
   dequeue(type) {

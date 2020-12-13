@@ -1,6 +1,10 @@
 module.exports = {
   people: ['Randy Lahey', 'Trevor Cory', 'Jim Lahey'],
 
+  dogList: ['Randy Lahey', 'Trevor Cory', 'Jim Lahey'],
+
+  catList: ['Taylor Phelps', 'Sarah Phelps', 'Kent Phelps'],
+
   dogs: [
     {
       age: 3,

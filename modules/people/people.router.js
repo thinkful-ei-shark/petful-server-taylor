@@ -15,7 +15,7 @@ router.post('/', json, (req, res) => {
   const { person } = req.body;
   console.log(req.body);
   People.enqueue(person);
-  res.status(201).json({ message: 'person added' });
+  res.status(201).json(person);
 });
 
 module.exports = router;

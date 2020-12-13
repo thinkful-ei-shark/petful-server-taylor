@@ -16,9 +16,9 @@ module.exports = {
     return people.all();
   },
 
-  enqueue(person) {
+  enqueue(name) {
     // Add a person to the queue.
-    return people.enqueue(person);
+    return people.enqueue(name);
   },
 
   dequeue(person) {

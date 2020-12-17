@@ -6,7 +6,12 @@ store.dogList.forEach(person => dogList.enqueue(person));
 
 module.exports = {
   get() {
+    console.log(dogList.all());
     return dogList.all();
+  },
+
+  getLengthOfQueue() {
+    return dogList.all().length;
   },
 
   enqueue(name) {

@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
 router.post('/', json, (req, res) => {
   // Add a new person to the queue.
   const { person } = req.body;
-  console.log(req.body);
   dogList.enqueue(person);
   res.status(201).json(person);
 });
@@ -22,6 +21,7 @@ router.delete('/', json, (req, res) => {
   const { person } = req.body;
 
   dogList.dequeue(person);
+
   res.json(person);
 });
 

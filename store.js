@@ -63,13 +63,13 @@ module.exports = {
     },
 
     {
+      age: 3,
       imageURL:
         'https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
       description:
         'A smiling golden-brown golden retreiver listening to music.',
       name: 'Zeke',
       gender: 'Male',
-      age: 3,
       breed: 'Golden Retriever',
       story: 'Owner Passed away',
     },

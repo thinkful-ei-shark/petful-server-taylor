@@ -9,9 +9,7 @@ store.dogs.forEach(dog => dogs.dogs.enqueue(dog));
 
 module.exports = {
   get() {
-    let newDogs = {
-      dog: dogs.dogs.show(),
-    };
+    let newDogs = [dogs.dogs.first.value];
     return newDogs;
   },
 

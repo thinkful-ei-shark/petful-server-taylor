@@ -6,7 +6,13 @@ store.catList.forEach(person => catList.enqueue(person));
 
 module.exports = {
   get() {
+    console.log(catList.all());
+
     return catList.all();
+  },
+
+  getLengthOfQueue() {
+    return catList.all().length;
   },
 
   enqueue(name) {

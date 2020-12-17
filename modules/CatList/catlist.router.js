@@ -1,7 +1,7 @@
 const express = require('express');
 const json = require('body-parser').json();
 
-const catList = require('./catList.service');
+const catList = require('./catlist.service');
 
 const router = express.Router();
 
@@ -21,6 +21,7 @@ router.delete('/', json, (req, res) => {
   const { person } = req.body;
 
   catList.dequeue(person);
+
   res.json(person);
 });
 

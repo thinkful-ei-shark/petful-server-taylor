@@ -9,7 +9,7 @@ store.cats.forEach(cat => cats.cats.enqueue(cat));
 
 module.exports = {
   get() {
-    let newCats = cats.cats.first.value;
+    let newCats = [cats.cats.first.value];
     return newCats;
   },
 

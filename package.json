@@ -1,5 +1,6 @@
 {
   "name": "petful-server",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server"
   },
